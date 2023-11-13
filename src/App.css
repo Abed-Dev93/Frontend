@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-bg-clr: #090909;
+    --main-text-color: #fff;
+    --red-text-clr: #dc0000;
+    --red-btn-clr: #dc0000;
+    --btn-hover-clr:#fa2a2a;
+    --footer-clr: #610000;
+    --black-text-clr: #090909;
+    --card-bg-clr: #222222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: var(--main-bg-clr);
+    color: var(--main-text-color);
+    font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+.homeWrapper, .servicesWrapper, .portfolioWrapper, .aboutUsWrapper, .contactUsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    width: 90%;
+    margin: 4rem auto;
 }
